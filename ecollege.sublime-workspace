@@ -11,7 +11,7 @@
 			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 8,
+				"buffer_size": 30,
 				"line_ending": "Windows"
 			}
 		}
@@ -97,15 +97,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8,
+						"buffer_size": 30,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8,
-								8
+								30,
+								30
 							]
 						],
 						"settings":
