@@ -11,7 +11,11 @@
 			"file": "index.php",
 			"settings":
 			{
+<<<<<<< HEAD
 				"buffer_size": 8,
+=======
+				"buffer_size": 30,
+>>>>>>> parent of 0c8ab97... removed sublime files
 				"line_ending": "Windows"
 			}
 		}
@@ -97,7 +101,11 @@
 					"semi_transient": false,
 					"settings":
 					{
+<<<<<<< HEAD
 						"buffer_size": 8,
+=======
+						"buffer_size": 30,
+>>>>>>> parent of 0c8ab97... removed sublime files
 						"regions":
 						{
 						},
