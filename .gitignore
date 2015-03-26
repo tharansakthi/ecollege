@@ -1,5 +1,5 @@
-.sublime-project
-.sublime-workspace
+
+*.sublime-workspace
 .DS_Store
 
 application/cache/*
