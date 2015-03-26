@@ -20,7 +20,10 @@
 <header id="info">
 <a target="_blank" class="user_name" href="<?php echo $userData->link; ?>" /><img class="user_img" src="<?php echo $userData->picture; ?>" width="15%" />
 <?php echo '<p class="welcome"><i>Welcome ! </i>' . $userData->name . "</p>"; ?></a>
-<!-- <a class='logout' href='https://www.google.com/accounts/Logout?continue=<?php echo base_url(); ?>/user_authentication/logout'>Logout</a> -->
+<!-- 
+****** this code will log you out from both google and ecollege ********
+<a class='logout' href='https://www.google.com/accounts/Logout?continue=<?php echo base_url(); ?>/user_authentication/logout'>Logout</a> -->
+<!-- this will log you out only from ecollege -->
 <a class='logout' href="<?php echo base_url(); ?>user_authentication/logout">Logout</a>
 </header>
 <?php
