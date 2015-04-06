@@ -19,9 +19,15 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
-
-		$this->load->view('view_welcome_message');
+        $this->home_page();
+        //$this->load->view('view_welcome_message');
 	}
+
+    public function home_page()
+    {
+        echo '<p><a href="user_authentication">login</a></p>';
+
+    }
 }
 
 /* End of file welcome.php */

@@ -4,7 +4,7 @@
 session_start();
 
 class User_Authentication extends CI_Controller {
-
+// constructor function initialized everytime the controller called
 public function __construct() {
 parent::__construct();
 }
@@ -13,10 +13,10 @@ public function index() {
 
 // Include two files from google-php-client library in controller
 //$this->load->library('google-api-php-client-master/src/Google/Client.php');
-include_once APPPATH . "libraries/google-api-php-client-master/src/Google/autoload.php";
-include_once APPPATH .'libraries/google-api-php-client-master/src/Google/Client.php';
-//require_once APPPATH . "libraries/google-api-php-client-master/src/Google/Client.php";
-include_once APPPATH . "libraries/google-api-php-client-master/src/Google/Service/Oauth2.php";
+require_once APPPATH . "libraries/google-api-php-client-master/src/Google/autoload.php";
+//include_once APPPATH .'libraries/google-api-php-client-master/src/Google/Client.php';
+require_once APPPATH . "libraries/google-api-php-client-master/src/Google/Client.php";
+require_once APPPATH . "libraries/google-api-php-client-master/src/Google/Service/Oauth2.php";
 
 
 // Store values in variables from project created in Google Developer Console
@@ -53,10 +53,13 @@ $client->setAccessToken($_SESSION['access_token']);
 if ($client->getAccessToken()) {
 $userData = $objOAuthService->userinfo->get();
 $data['userData'] = $userData;
+    $email = $userData->email;
+    $this->session->set_userdata('session_email',$email);
 $_SESSION['access_token'] = $client->getAccessToken();
 } else {
 $authUrl = $client->createAuthUrl();
 $data['authUrl'] = $authUrl;
+
 }
 // Load view and send values stored in $data
 $this->load->view('google_authentication', $data);
@@ -65,7 +68,12 @@ $this->load->view('google_authentication', $data);
 // Unset session and logout
 public function logout() {
 unset($_SESSION['access_token']);
+    $this->session->unset_userdata('session_email');
 redirect(base_url());
 }
+public function printsession(){
+    echo $this->session->userdata('session_email');
+    }
+
 }
 ?>
