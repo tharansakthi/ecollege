@@ -1,10 +1,6 @@
-<html>
-<head>
-<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css">
-<link rel="stylesheet" media="screen and (max-width: 1200px) and (min-width: 0px)" type="text/css" href="<?php echo base_url(); ?>css/styleresponsive1.css">
-<link rel="stylesheet" media="screen and (max-width: 600px) and (min-width: 0px)" type="text/css" href="<?php echo base_url(); ?>css/styleresponsive2.css">
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Open+Sans+Condensed:300|Raleway' rel='stylesheet' type='text/css'>
-</head>
+<?php
+    $this->load->view('inc/header');
+?>
 <body>
 <div id="main">
 <div id="envelope">
@@ -14,7 +10,7 @@
 </header>
 <hr>
 <div id="content">
-<center><a href="<?php echo $authUrl; ?>">log in</a></center>
+<a href="<?php echo $authUrl; ?>">log in</a>
 </div>
 <?php }else{ ?>
 <header id="info">
