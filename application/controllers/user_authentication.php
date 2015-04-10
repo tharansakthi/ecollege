@@ -63,13 +63,16 @@ $data['authUrl'] = $authUrl;
 }
 // Load view and send values stored in $data
 $this->load->view('google_authentication', $data);
+
 }
 
 // Unset session and logout
 public function logout() {
-unset($_SESSION['access_token']);
+//removes **php** session data
+    unset($_SESSION['access_token']);
+//removes **codeigniter session data
     $this->session->unset_userdata('session_email');
-redirect(base_url());
+redirect(base_url('user_authentication'));
 }
 public function printsession(){
     echo $this->session->userdata('session_email');
