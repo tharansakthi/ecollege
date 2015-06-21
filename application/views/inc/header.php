@@ -1,7 +1,7 @@
 <html>
 <head>
-    <link rel="stylesheet" href="<?php echo base_url(); ?>application/res/lib/materialize/css/materialize.min.css">
-    <script src="<?php echo base_url(); ?>application/res/lib/materialize/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="<?php echo base_url(); ?>application/libraries/materialize/dist/css/materialize.min.css">
+    <script src="<?php echo base_url(); ?>application/libraries/materialize/dist/js/materialize.min.js"></script>
 </head>
 <body>
 <div class="header">
