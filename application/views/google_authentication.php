@@ -1,7 +1,6 @@
 <?php
     $this->load->view('inc/header');
 ?>
-<body>
 <div id="main">
 <div id="envelope">
 <?php if (isset($authUrl)){ ?>
@@ -32,5 +31,4 @@ echo "<p><b>Email : </b>" . $userData->email . "</p>";
 <?php }?>
 </div>
 </div>
-</body>
-</html>
+

@@ -1,0 +1,3 @@
+[submodule "ci_frame"]
+	path = ci_frame
+	url = https://github.com/bcit-ci/CodeIgniter.git
