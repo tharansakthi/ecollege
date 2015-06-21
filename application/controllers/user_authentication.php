@@ -1,7 +1,8 @@
 <?php
 // Start session
 
-session_start();
+//session_start();
+//session_close();
 
 class User_Authentication extends CI_Controller {
 // constructor function initialized everytime the controller called
@@ -71,7 +72,9 @@ public function logout() {
 //removes **php** session data
     unset($_SESSION['access_token']);
 //removes **codeigniter session data
-    $this->session->unset_userdata('session_email');
+   // $this->session->unset_userdata('session_email');
+    $this->session->sess_destroy();
+
 redirect(base_url('user_authentication'));
 }
 public function printsession(){
