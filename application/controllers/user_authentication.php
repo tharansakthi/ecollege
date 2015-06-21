@@ -14,10 +14,10 @@ public function index() {
 
 // Include two files from google-php-client library in controller
 //$this->load->library('google-api-php-client-master/src/Google/Client.php');
-require_once APPPATH . "libraries/google-api-php-client-master/src/Google/autoload.php";
+require_once APPPATH . "libraries/oauth/src/Google/autoload.php";
 //include_once APPPATH .'libraries/google-api-php-client-master/src/Google/Client.php';
-require_once APPPATH . "libraries/google-api-php-client-master/src/Google/Client.php";
-require_once APPPATH . "libraries/google-api-php-client-master/src/Google/Service/Oauth2.php";
+require_once APPPATH . "libraries/oauth/src/Google/Client.php";
+require_once APPPATH . "libraries/oauth/src/Google/Service/Oauth2.php";
 
 
 // Store values in variables from project created in Google Developer Console

@@ -1,3 +1,6 @@
 [submodule "ci_frame"]
 	path = ci_frame
 	url = https://github.com/bcit-ci/CodeIgniter.git
+[submodule "application/libraries/oauth"]
+	path = application/libraries/oauth
+	url = https://github.com/google/google-api-php-client.git
