@@ -1,12 +1,11 @@
-<<<<<<< HEAD
+
 
 *.sublime-workspace
 .DS_Store
 .idea/**
 =======
 .DS_Store
->>>>>>> 0a6e7b4349598883b6f29ee7dcebfd1cfdf8c3ff
-
+session_data
 application/cache/*
 !application/cache/index.html
 !application/cache/.htaccess
@@ -14,7 +13,6 @@ application/cache/*
 application/logs/*
 !application/logs/index.html
 !application/logs/.htaccess
-<<<<<<< HEAD
 .idea/workspace.xml
 =======
 
@@ -35,4 +33,4 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 *.stTheme.cache
 *.sublime-workspace
 *.sublime-project
->>>>>>> 0a6e7b4349598883b6f29ee7dcebfd1cfdf8c3ff
+
