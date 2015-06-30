@@ -98,7 +98,11 @@ switch (ENVIRONMENT)
  * Include the path if the folder is not in the same directory
  * as this file.
  */
+<<<<<<< HEAD
 	$system_path = 'ci_frame/system';
+=======
+	$system_path = 'system';
+>>>>>>> 0a6e7b4349598883b6f29ee7dcebfd1cfdf8c3ff
 
 /*
  *---------------------------------------------------------------

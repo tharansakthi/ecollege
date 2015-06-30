@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+=======
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+>>>>>>> 0a6e7b4349598883b6f29ee7dcebfd1cfdf8c3ff
 /*
 | -------------------------------------------------------------------------
 | Profiler Sections
@@ -10,8 +16,11 @@
 |	http://codeigniter.com/user_guide/general/profiling.html
 |
 */
+<<<<<<< HEAD
 
 
 
 /* End of file profiler.php */
 /* Location: ./application/config/profiler.php */
+=======
+>>>>>>> 0a6e7b4349598883b6f29ee7dcebfd1cfdf8c3ff

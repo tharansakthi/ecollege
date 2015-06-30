@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 
 *.sublime-workspace
 .DS_Store
 .idea/**
+=======
+.DS_Store
+>>>>>>> 0a6e7b4349598883b6f29ee7dcebfd1cfdf8c3ff
 
 application/cache/*
 !application/cache/index.html
@@ -10,4 +14,25 @@ application/cache/*
 application/logs/*
 !application/logs/index.html
 !application/logs/.htaccess
+<<<<<<< HEAD
 .idea/workspace.xml
+=======
+
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+/vendor/
+
+# IDE Files
+#-------------------------
+/nbproject/
+.idea/*
+
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+>>>>>>> 0a6e7b4349598883b6f29ee7dcebfd1cfdf8c3ff
